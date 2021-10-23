@@ -1,0 +1,4 @@
+@import '__settings.scss'; // Подключение базовых настроек
+@import '__variables.scss'; // Подключаем переменные
+@import '__normalize.scss'; // Подкючаем стили normalize
+@import '../scss/blocks/_header'; // Подключаем блок header
