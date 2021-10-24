@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 992px) { // For IPad mini
+    .container {
+        max-width: 700px;
+    }
+    .navbar-top {
+        padding: 30px 0;
+    }
+    .logo {
+        width: 132px;
+    }
+    .navbar__search {
+        margin: 0 auto;
+    }
+    .search {
+        &__input {
+            max-width: 340px;
+        }
+    }
+    .navigation {
+        padding: 22px 0;
+        &__list {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+@media (max-width: 768px) { // For IPhone SE
+    .container {
+        max-width: 576px;
+        width: 92%;
+    }
+    .navbar-top {
+        &__menu-button {
+            display: flex;
+        }
+    }
+    .logo {
+        width: 99px;
+    }
+    .menu-button {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 11px;
+        width: 16px;
+        padding: 0;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        &__line {
+            height: 1px;
+            width: 16px;
+            background-color: $text-color;
+        }
+    }
+    .navbar__search, .navbar__user, .navigation {
+        display: none;
+    }
+}

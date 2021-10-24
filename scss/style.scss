@@ -1,4 +1,5 @@
 @import '__settings.scss'; // Подключение базовых настроек
 @import '__variables.scss'; // Подключаем переменные
 @import '__normalize.scss'; // Подкючаем стили normalize
-@import '../scss/blocks/_header'; // Подключаем блок header
+@import '../scss/blocks/_header.scss'; // Подключаем блок header
+@import '__media.scss' // Подключаем медиа запросы для адаптива
