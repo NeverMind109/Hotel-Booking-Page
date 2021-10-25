@@ -1,7 +1,9 @@
+.header {
+    background-color: #fff;
+}
 .navbar {
     &-top {
         display: flex;
-        background-color: #fff;
         align-items: center;
         justify-content: space-between;
         padding: 40px 0;
