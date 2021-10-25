@@ -7,14 +7,16 @@
     .container {
         max-width: 700px;
     }
-    .navbar-top {
-        padding: 30px 0;
+    .navbar {
+        &-top {
+            padding: 30px 0;
+        }
+        &__search {
+            margin: 0 auto;
+        }
     }
     .logo {
         width: 132px;
-    }
-    .navbar__search {
-        margin: 0 auto;
     }
     .search {
         &__input {
