@@ -564,6 +564,33 @@ template {
       background-color: #333; }
 
   .navbar__search, .navbar__user, .navigation {
-    display: none; } }
+    display: none; }
+
+  .breadcrump {
+    padding: 19px 0; }
+
+  .hotel {
+    padding: 20px 0; }
+    .hotel-wrapper {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .hotel-info__text {
+      width: 100%; }
+    .hotel-info__name {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin: 10px 0 0; }
+    .hotel-info__offer {
+      margin: 0;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+    .hotel-info__rating {
+      display: none; }
+
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto; } }
 
 /*# sourceMappingURL=style.css.map */
