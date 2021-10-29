@@ -491,7 +491,8 @@ template {
             flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    font-family: 'Nunito', sans-serif; }
 
 .stars {
   -ms-flex-preferred-size: 100%;
