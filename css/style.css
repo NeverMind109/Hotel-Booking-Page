@@ -339,10 +339,10 @@ template {
   padding: 40px 0; }
   .navbar-top__menu-button {
     display: none; }
+  .navbar-top__search {
+    margin: 0 auto 0 108px; }
 .navbar-bottom {
   background-color: #0A223D; }
-.navbar__search {
-  margin: 0 auto 0 108px; }
 
 .logo {
   width: 177px; }
@@ -752,13 +752,13 @@ template {
       -o-object-fit: cover;
          object-fit: cover; } }
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-container {
     max-width: 700px; }
 
   .navbar-top {
     padding: 30px 0; }
-  .navbar__search {
-    margin: 0 auto; }
+    .navbar-top__search {
+      margin: 0 auto; }
 
   .logo {
     width: 132px; }
@@ -828,7 +828,7 @@ template {
       width: 16px;
       background-color: #333; }
 
-  .navbar__search, .navbar__user, .navigation {
+  .navbar-top__search, .navbar-top__user, .navigation {
     display: none; }
 
   .breadcrump {
@@ -871,12 +871,42 @@ template {
     width: 100%; }
 
   .map {
-    width: 100%; } }
+    width: 100%; }
+
+  .newsletter-container {
+    max-width: 576px;
+    width: 92%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 76px 0 83px; }
+  .newsletter-title {
+    width: 100%;
+    min-height: 68px;
+    font-size: 20px;
+    line-height: 25px; }
+    .newsletter-title__text {
+      word-wrap: break-word;
+      font-size: 30px;
+      line-height: 38px; }
+  .newsletter__subscribe {
+    margin-top: 37px; }
+
+  .subscribe {
+    width: 100%; }
+    .subscribe__input {
+      padding: 19px 75px 19px 20px; } }
 @media (max-width: 576px) {
   .slider {
     height: 250px; }
 
-  .hotel__slider {
-    margin-bottom: 20px; } }
+  .hotel {
+    padding: 5px 0 40px; }
+    .hotel__slider {
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
