@@ -669,6 +669,77 @@ template {
   border-radius: 10px;
   overflow: hidden; }
 
+.newsletter {
+  position: relative;
+  background-image: url("../img/newsletter-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 34, 61, 0.8); }
+  .newsletter-container {
+    position: relative;
+    max-width: 731px;
+    margin: auto;
+    padding: 98px 0 87px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff; }
+    .newsletter-title__text {
+      display: block;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+      text-transform: uppercase; }
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  min-height: 55px;
+  border-radius: 4px;
+  overflow: hidden; }
+  .subscribe__input {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #BDBDBD;
+    padding: 19px 75px 19px 33px; }
+  .subscribe__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 65px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-color: #ec1f46;
+    border: none; }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px; }
