@@ -2,7 +2,18 @@
     .container {
         max-width: 960px;
     }
+    .swiper {
+        max-width: 590px;
+        &-slide {
+            &__image {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
+
 @media (max-width: 992px) { // For IPad mini
     .container {
         max-width: 700px;
@@ -30,7 +41,28 @@
             line-height: 15px;
         }
     }
+    .hotel {
+        &-grid {
+            flex-direction: column;
+        }
+        &-right {
+            flex-direction: row;
+        }
+        &__slider {
+            margin-bottom: 30px;
+        }
+    }
+    .swiper {
+        max-width: 100%;
+    }
+    .booking {
+        width: 340px;
+    }
+    .map {
+        width: 340px;
+    }
 }
+
 @media (max-width: 768px) { // For IPhone SE
     .container {
         max-width: 576px;
@@ -71,6 +103,10 @@
         &-wrapper {
             justify-content: space-between;
         }
+        &-right {
+            flex-direction: column;
+            min-height: 450px;
+        }
         &-info {
             &__text {
                 width: 100%;
@@ -90,5 +126,25 @@
     }
     .stars {
         flex-basis: auto;
+    }
+    .slider {
+        height: 350px;
+    }
+    .booking {
+        width: 100%;
+    }
+    .map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider {
+        height: 250px;
+    }
+    .hotel {
+        &__slider {
+            margin-bottom: 20px;
+        }
     }
 }
