@@ -85,18 +85,16 @@
                 </div>
             </div>
             <div class="hotel-grid">
-                <div class="slider hotel__slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper"><!-- Additional required wrapper -->
-                            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide1.jpg" alt="Slide"></div><!-- Slides -->
-                            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide2.jpg" alt="Slide"></div>
-                            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide3.jpg" alt="Slide"></div>
-                            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide4.jpg" alt="Slide"></div>
-                            <div class="swiper-slide"><img class="swiper-slide__image" src="img/slide5.jpg" alt="Slide"></div>
-                        </div>
-                        <button class="slider-button slider-button__prev"></button><!-- If we need navigation buttons -->
-                        <button class="slider-button slider-button__next"></button>
+                <div class="swiper hotel__slider hotel-slider">
+                    <div class="swiper-wrapper"><!-- Additional required wrapper -->
+                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide1.jpg" alt="Slide"></div><!-- Slides -->
+                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide2.jpg" alt="Slide"></div>
+                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide3.jpg" alt="Slide"></div>
+                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide4.jpg" alt="Slide"></div>
+                        <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide5.jpg" alt="Slide"></div>
                     </div>
+                    <button class="hotel-slider__button hotel-slider__button--prev"></button><!-- If we need navigation buttons -->
+                    <button class="hotel-slider__button hotel-slider__button--next"></button>
                 </div>
                 <div class="hotel-right">
                     <div class="booking">
@@ -142,6 +140,68 @@
                 <input type="text" placeholder="Your email address" class="subscribe__input">
                 <button class="subscribe__button">Send</button>
             </form>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people think about us</h2>
+            <div class="swiper reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <!-- Slide -->
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                </div>
+                            </div>
+                            <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/reviews-avatar-1.jpg" alt="Photo: Marie Johnson" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Marie Johnson</h3>
+                                <span class="reviews-slider__date">Stayed 1 Sep, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                </div>
+                            </div>
+                            <p class="reviews-slider__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eligendi explicabo placeat ut alias ipsa quia deserunt maiores fuga earum officiis, molestias dolorum ratione nemo nisi voluptatem cum, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dignissimos eaque, dolorum ea iste harum dolorem earum exercitationem veniam quod inventore mollitia qui? Vero, placeat rem! In repudiandae iure architecto!</p>
+                        </div>
+                    </div> <!-- Slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/reviews-avatar-2.jpg" alt="Photo: John Brown" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">John Brown</h3>
+                                <span class="reviews-slider__date">Stayed 12 Apr, 2018</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                    <img src="img/Star.svg" alt="Star">
+                                </div>
+                            </div>
+                            <p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem libero rerum illum delectus harum odit, quis optio blanditiis maxime animi, magnam pariatur porro nemo odio earum consectetur cum facere dicta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore repellat quod voluptatem impedit a! Quidem, cum cupiditate! Repellendus ratione perferendis dolores voluptatibus pariatur itaque. Eos aperiam animi atque delectus. Aperiam!</p>
+                        </div>
+                    </div> <!-- Slide -->
+                </div>
+                <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                <button class="reviews-slider__button reviews-slider__button--next"></button>
+            </div>
         </div>
     </section>
     <script src="js/swiper-bundle.min.js"></script> <!--Подключаем скрипт swiperjs для слайдера-->

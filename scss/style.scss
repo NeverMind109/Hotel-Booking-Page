@@ -2,7 +2,8 @@
 @import '__settings.scss'; // Подключение базовых настроек
 @import '__normalize.scss'; // Подкючаем стили normalize
 @import '../scss/blocks/__header.scss'; // Подключаем блок header
-@import '../scss/blocks/__breadcrump.scss'; // Подключаем блок breadcrumps
+@import '../scss/blocks/__breadcrump.scss'; // Подключаем блок хлебные крошки breadcrumps
 @import '../scss/blocks/__hotel.scss'; // Подключаем блок hotel
-@import '../scss/blocks/__newsletter.scss'; // Подключаем блок newsletter
+@import '../scss/blocks/__newsletter.scss'; // Подключаем блок подписки newsletter
+@import '../scss/blocks/__reviews.scss'; // Подключаем блок отзывов reviews
 @import '__media.scss'; // Подключаем медиа запросы для адаптива
