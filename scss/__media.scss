@@ -12,6 +12,10 @@
             }
         }
     }
+    .card {
+        width: 230px;
+        height: 230px;
+    }
 }
 
 @media (max-width: 992px) { // For IPad mini
@@ -76,6 +80,19 @@
                 max-width: 579px;
             }
         }
+    }
+    .activities {
+        padding: 60px 0 70px;
+        &-wrapper {
+            flex-wrap: wrap;
+        }
+        &__card {
+            margin-bottom: 20px;
+        }
+    }
+    .card {
+        width: 340px;
+        height: 255px;
     }
 }
 
@@ -214,6 +231,17 @@
             }
         }
     }
+    .activities {
+        padding: 40px 0 60px;
+        &__title {
+            font-size: 18px;
+            line-height: 23px;
+            margin: 0 0 36px;
+        }
+    }
+    .card {
+        width: 49%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -232,5 +260,8 @@
                 max-width: 219px;
             }
         }
+    }
+    .card {
+        width: 100%;
     }
 }
