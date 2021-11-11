@@ -143,6 +143,18 @@
 }
 
 @media (max-width: 768px) { // For IPhone SE
+    body {
+        padding-top: 80px;
+    }
+    .header {
+        &__mobile--fixed {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 99;
+        }
+    }
     .container {
         max-width: 576px;
         width: 92%;
@@ -171,8 +183,53 @@
             background-color: $text-color;
         }
     }
-    .navbar-top__search, .navbar-top__user, .navigation {
+    .user {
+        &__name {
+              &--light {
+                  color: #fff;
+                  margin-left: 0;
+                  margin-top: 10px;
+              }
+        }
+    }
+    .navbar-top {
+        &__user, &__search {
+            &--mobile {
+                &--hidden {
+                    display: none;
+                }
+                &--visible {
+                    display: flex;
+                }
+            }
+        }
+    }
+    .navbar-top{
+        &__user {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .navbar-bottom {
         display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 80px;
+        padding-top: 30px;
+        &--visible {
+            display: block;
+        }
+    }
+    .navigation {
+        flex-direction: column;
+        &__item {
+            margin-bottom: 20px;
+            &--mobile--visible {
+                display: flex;
+            }
+        }
     }
     .breadcrump {
         padding: 19px 0;
