@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // Настройки для слайдера
     const hotelSlider = new Swiper('.hotel-slider', {
       // Optional parameters
@@ -10,7 +11,6 @@ $(document).ready(function () {
         prevEl: '.hotel-slider__button--prev',
       },
   });
-
   const reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
@@ -19,6 +19,18 @@ $(document).ready(function () {
     navigation: {
       nextEl: '.reviews-slider__button--next',
       prevEl: '.reviews-slider__button--prev',
+    },
+  });
+
+  // Управление слайдерами с клавиатуры
+  const hotelSwiper = new Swiper('.hotel-slider', {
+    keyboard: {
+      enabled: true,
+    },
+  });
+  const reviwsSwiper = new Swiper('.reviews-slider', {
+    keyboard: {
+      enabled: true,
     },
   });
 
