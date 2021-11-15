@@ -150,8 +150,8 @@
             <h2 class="newsletter-title">subscribe to our
                 <span class="newsletter-title__text">News&shy;letter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" placeholder="Your email address" class="subscribe__input">
+            <form action="#" class="subscribe newsletter__subscribe form">
+                <input type="email" name="email" placeholder="Your email address" class="subscribe__input" required>
                 <button class="subscribe__button">Send</button>
             </form>
         </div>
@@ -303,9 +303,13 @@
                 </div>
                 <div class="footer__feedback">
                     <h3 class="footer__header footer__margin-2">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" placeholder="Your Full Name*" class="input footer__input">
-                        <input type="tel" placeholder="Phone Number*" class="input footer__input">
+                    <form action="#" class="footer__form form">
+                        <div class="footer__input-group">
+                            <input type="text" name="name" placeholder="Your Full Name*" class="input footer__input" minlength="2" required>
+                        </div>
+                        <div class="footer__input-group">
+                            <input type="tel" name="phone" placeholder="Phone Number*" class="input footer__input" required>
+                        </div>
                         <textarea placeholder="Message" class="message footer__message"></textarea>
                         <button class="button footer__button">Send</button>
                         <span class="footer__info footer__info--margin-4">* Required Fields</span>
@@ -318,7 +322,7 @@
                     <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a></li>
                     <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Cancellation policy</a></li>
                 </ul>
-                <a href="" class="footer-bottom__payment"><img src="img/payment.png" alt="Payment" class="footer-bottom__image"></a>
+                <a href="#" class="footer-bottom__payment"><img src="img/payment.png" alt="Payment" class="footer-bottom__image"></a>
             </div>
         </div>
     </footer>
@@ -327,10 +331,10 @@
         <div class="modal__dialog">
             <a href="#" class="modal__close"><img src="img/close.svg" alt="Logo: Close"></a>
             <h3 class="modal__header modal__margin-2">Booking</h3>
-            <form action="#" class="modal__form">
-                <input type="text" placeholder="Your Full Name*" class="input modal__input">
-                <input type="tel" placeholder="Phone Number*" class="input modal__input">
-                <input type="email" placeholder="Email*" class="input modal__input">
+            <form action="#" class="modal__form form">
+                <input type="text" name="name" placeholder="Your Full Name*" class="input modal__input" minlength="2" required>
+                <input type="tel" name="phone" placeholder="Phone Number*" class="input modal__input" required>
+                <input type="email" name="email" placeholder="Email*" class="input modal__input" required>
                 <textarea placeholder="Message" class="message modal__message"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info modal__info--margin-4">* Required Fields</span>
@@ -342,10 +346,10 @@
         <div class="modal__dialog">
             <a href="#" class="modal__close"><img src="img/close.svg" alt="Logo: Close"></a>
             <h3 class="modal__header modal__margin-2">Send us feedback</h3>
-            <form action="#" class="modal__form">
-                <input type="text" placeholder="Your Full Name*" class="input modal__input">
-                <input type="tel" placeholder="Phone Number*" class="input modal__input">
-                <input type="email" placeholder="Email*" class="input modal__input">
+            <form action="#" class="modal__form form">
+                <input type="text" name="name" placeholder="Your Full Name*" class="input modal__input" minlength="2" required>
+                <input type="tel" name="phone" placeholder="Phone Number*" class="input modal__input" required>
+                <input type="email" name="email" placeholder="Email*" class="input modal__input" required>
                 <textarea placeholder="Message" class="message modal__message"></textarea>
                 <button class="button modal__button">Send</button>
                 <span class="modal__info modal__info--margin-4">* Required Fields</span>
@@ -354,6 +358,7 @@
     </div>
     <script src="js/jquery-3.6.0.min.js"></script> <!--Подключаем библиотеку jquery-->
     <script src="js/swiper-bundle.min.js"></script> <!--Подключаем скрипт swiperjs для слайдера-->
+    <script src="js/jquery.validate.min.js"></script> <!--Подключаем валидатор для форм-->
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -18,7 +18,9 @@
     }
     .footer {
         &__input {
-            flex-basis: 100%;
+            &-group {
+                flex-basis: 100%;
+            }
         }
     }
 }
@@ -130,7 +132,9 @@
             grid-column: span 5;
         }
         &__input {
-            flex-basis: 48%;
+            &-group {
+                flex-basis: 48%;
+            }
         }
         &-bottom {
             display: flex;
@@ -347,7 +351,9 @@
     }
     .footer {
         &__input {
-            flex-basis: 100%;
+            &-group {
+                flex-basis: 100%;
+            }
         }
     }
 }
