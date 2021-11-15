@@ -1,9 +1,5 @@
 .newsletter {
     position: relative;
-    background-image: url('../img/newsletter-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     &::before {
         content: '';
         position: absolute;
@@ -18,6 +14,7 @@
     &-container {
         position: relative;
         max-width: 731px;
+        width: 100%;
         margin: auto;
         padding: 98px 0 87px;
         display: flex;

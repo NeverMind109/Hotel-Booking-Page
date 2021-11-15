@@ -66,4 +66,6 @@ $(document).ready(function () {
       },
     });
   })
+  // Parallax effect for newsletter
+  $('.parallax-window').parallax({imageSrc: "../img/newsletter-bg.jpg"});
 });
