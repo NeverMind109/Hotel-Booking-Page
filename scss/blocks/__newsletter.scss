@@ -65,5 +65,15 @@
         background-color: $primary;
         border: none;
         cursor: pointer;
+        &:hover {
+            background-color: $button-hover-color;
+            color: #000;
+        }
+        &:active {
+            &:hover {
+                background-color: $button-action-color;
+                color: #fff;
+            }
+        }
     }
 }

@@ -120,6 +120,16 @@
         font-size: 14px;
         line-height: 18px;
     }
+    &:hover {
+        background-color: $button-hover-color;
+        color: #000;
+    }
+    &:active {
+        &:hover {
+            background-color: $button-action-color;
+            color: #fff;
+        }
+    }
 }
 .booking {
     background-color: #0A223D;
@@ -202,6 +212,16 @@
         background-color: $primary;
         border-radius: 4px;
         cursor: pointer;
+        &:hover {
+            background-color: $button-hover-color;
+            color: #000;
+        }
+        &:active {
+            &:hover {
+                background-color: $button-action-color;
+                color: #fff;
+            }
+        }
     }
 
 }

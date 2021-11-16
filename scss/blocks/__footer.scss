@@ -29,6 +29,9 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 160%;
+        &--hover:hover, .footer__item {
+            color: #fff;
+        }
         &--icon:nth-child(1) {
             content: '';
             background-image: url('../img/place-marker.svg');
@@ -98,7 +101,7 @@
     }
     &__form {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -107,11 +110,24 @@
         &-group {
             margin-bottom: 15px;
             flex-basis: 48%;
+            align-self: flex-start;
         }
     }
     &__message {
         margin-bottom: 23px;
         flex-basis: 100%;
+    }
+    &__button {
+        &:hover {
+            background-color: $button-hover-color;
+            color: #000;
+        }
+        &:active {
+            &:hover {
+                background-color: $button-action-color;
+                color: #fff;
+            }
+        }
     }
     &__info {
         font-weight: bold;
@@ -140,6 +156,9 @@
             font-size: 12px;
             line-height: 15px;
             color: #FFFFFF;
+            &:hover {
+                color: $text-hover-color;
+            }
         }
         &__link {
             color: inherit;
